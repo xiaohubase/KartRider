@@ -1,0 +1,298 @@
+﻿// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TAYCAN_BOOSTER
+//
+
+IDR_TAYCAN_BOOSTER1     TAYCAN_BOOSTER          "booster\\booster.ogg"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TAYCAN_BOOSTERDRIFT
+//
+
+IDR_TAYCAN_BOOSTERDRIFT1 TAYCAN_BOOSTERDRIFT     "booster\\boosterDrift.ogg"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TAYCAN_MOTOR
+//
+
+IDR_TAYCAN_MOTOR1       TAYCAN_MOTOR            "booster\\motor.ogg"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_Exchange DIALOGEX 0, 0, 595, 296
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "自动[合成][升级][分解][过滤]车辆"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_filter,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,445,21,136,182
+    GROUPBOX        "自动合成",IDC_STATIC_Exchange,9,9,205,166
+    CONTROL         "[启动\\停止]自动合成",IDC_CHECK_begin,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,23,89,12
+    COMBOBOX        IDC_COMBO_carnum,118,23,75,76,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "提高幸运值",IDC_CHECK2_lucky,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,41,55,12
+    COMBOBOX        IDC_COMBO2_lucky,86,41,107,43,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "判断合成结果是过滤车子停止合成",IDC_CHECK3_cchresult,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,57,152,14
+    CONTROL         "合成列表显示车子数量",IDC_CHECK4_showcarnum,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,74,100,12
+    EDITTEXT        IDC_EDIT1_carnum,128,73,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "锁定页数",IDC_CHECK5_lockpage,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,91,48,11
+    EDITTEXT        IDC_EDIT_lockpage,76,90,33,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "👈👈跳转指定页",IDC_BUTTON1_jumppage,117,87,69,16
+    EDITTEXT        IDC_EDIT3_delay,63,106,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "合成延时:",IDC_STATIC_delay,21,108,38,10
+    EDITTEXT        IDC_EDIT4_log,16,119,191,51,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "过滤车辆列表&&按Del键可删除项目",IDC_STATIC_tip,445,4,137,11
+    LTEXT           "车子名字:",IDC_STATIC_addcar_name,445,214,42,9
+    EDITTEXT        IDC_EDIT1_addcar_name,488,211,53,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_BUTTON1_addcar,546,214,37,25
+    LTEXT           "车子代码:",IDC_STATIC_addcar_code,446,230,42,9
+    EDITTEXT        IDC_EDIT1_addcar_code,488,228,53,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "车库[引擎&&属性]过滤(只对车库生效)",IDC_STATIC_egfilter,231,11,198,111
+    CONTROL         "V1",IDC_CHECK_Engine_V1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,242,28,28,11
+    CONTROL         "X",IDC_CHECK_Engine_X,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,276,28,28,11
+    CONTROL         "9",IDC_CHECK_Engine_9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,310,28,28,11
+    CONTROL         "HT+\\New",IDC_CHECK_Engine_HTNew,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,346,28,45,11
+    CONTROL         "HT",IDC_CHECK_Engine_HT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,242,43,27,11
+    CONTROL         "Z7",IDC_CHECK_Engine_Z7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,276,43,27,11
+    CONTROL         "SR",IDC_CHECK_Engine_SR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,310,43,27,11
+    CONTROL         "PRO\\R4\\G3\\E2\\C1",IDC_CHECK_Engine_PRO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,346,43,81,11
+    CONTROL         "终极(红框)",IDC_CHECK_attribute_red,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,242,57,58,11
+    CONTROL         "稀有(金框)",IDC_CHECK_attribute_gold,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,323,58,58,11
+    CONTROL         "高级(紫框)",IDC_CHECK_attribute_purple,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,242,72,58,11
+    CONTROL         "普通(白框)",IDC_CHECK_attribute_white,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,324,72,58,11
+    CONTROL         "过滤升级过的车子",IDC_CHECK_filter_upcar,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,242,86,78,11
+    GROUPBOX        "车辆自动升级",IDC_STATIC_kartlevelup,10,180,204,82
+    CONTROL         "[启动\\停止]自动升级车辆",IDC_CHECK_kartup,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,194,102,12
+    CONTROL         "提高幸运点",IDC_CHECK_kartup_lucky,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,210,58,12
+    COMBOBOX        IDC_COMBO_kartup_lucky,82,208,89,55,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "锁定页数",IDC_CHECK_kartup_lockpage,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,226,47,11
+    EDITTEXT        IDC_EDIT_kartup_lockpage,74,225,27,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "显示车子数量",IDC_CHECK4_showcarnum2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,110,226,65,12
+    EDITTEXT        IDC_EDIT1_carnum2,177,226,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "升级延时:",IDC_STATICsadasdas,23,242,38,10
+    EDITTEXT        IDC_EDIT_kartup_delay,68,240,34,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "过滤车子列表不显示",IDC_CHECK_filter,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,324,85,92,13
+    GROUPBOX        "自动分解卡丁车",IDC_STATIC23232s,224,186,191,69
+    CONTROL         "[启动\\停止]自动分解卡丁车",IDC_CHECK_disasse_kart,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,239,200,111,11
+    CONTROL         "锁定页数",IDC_CHECK_disasse_lockpage,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,239,215,47,13
+    EDITTEXT        IDC_EDIT_disasse_page,289,215,23,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "显示车子数量",IDC_CHECK_disasse_shownum,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,318,215,64,13
+    EDITTEXT        IDC_EDIT_disasse_carnum,383,215,23,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "分解延时:",IDC_STATIC_disasse,241,233,43,9
+    EDITTEXT        IDC_EDIT_disasse_delay,284,232,26,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "只显示指定过滤车辆(与不显示互斥)",IDC_CHECK_filter_show,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,242,100,148,12
+END
+
+IDD_DIALOG_BlockCatch DIALOGEX 0, 0, 223, 263
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOPMOST
+CAPTION "自动抓娃娃"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "锁定娃娃机时间",IDC_STATIC_g1,9,4,205,137
+    PUSHBUTTON      "进入狂热模式",IDC_BUTTON_finalTime,27,23,69,20
+    PUSHBUTTON      "结束抓娃娃游戏",IDC_BUTTON_overdollgame,123,22,74,20
+    LTEXT           "使用说明:\r\n\r\n辅助只是锁定抓礼盒时间需自己手动抓礼盒\r\n\r\n当不出礼盒的时候点击辅助上的进入狂暴就会又出来很多礼盒了,分数够了点击结束娃娃游戏即可\r\n\r\n注意：不要直接进入狂热模式和结束娃娃游戏,依次不出礼盒进狂热模式,十秒后可点结束抓娃娃游戏。",IDC_STATIC_dollText,20,54,182,75
+    GROUPBOX        "自动抓娃娃",IDC_STATIC_autodoll,9,147,205,108
+    CONTROL         "[开始\\停止]自动抓娃娃",IDC_CHECK_dollbegin,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,166,104,13
+    LTEXT           "自定分数:",IDC_STATIC_score,128,168,42,11
+    EDITTEXT        IDC_EDIT1_score,169,166,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "说明:\r\n\r\n必须在娃娃机选择代币界面打钩(默认选择3代币),自动抓够自定分数后会等待计时结束\r\n\r\n不要使用变速也不要提前结束游戏否则掉线;一分钟一局;千万不要提前结束",IDC_STATIC_auto_tips,20,185,182,65
+END
+
+IDD_DIALOG_magicHat DIALOGEX 0, 0, 489, 298
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "监视",IDC_STATIC_monitor,13,10,231,169
+    CONTROL         "[开始\\停止]监视魔法帽面板",IDC_CHECKBOX_begin,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,22,125,14
+    LTEXT           "选择监视道具",IDC_STATIC_t1,31,43,54,9
+    COMBOBOX        IDC_COMBO_ItemList,98,40,122,161,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "延时:",IDC_STATIC_sleep,32,61,23,9
+    EDITTEXT        IDC_EDIT_sleep,61,59,31,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "延时数值越小越快",IDC_STATIC_t2,102,60,68,9
+    LTEXT           "日志:",IDC_STATIC_t3,20,84,38,10
+    EDITTEXT        IDC_EDIT2,19,99,218,73,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "面板数据",IDC_GroupBox,249,10,234,171
+    CTEXT           "\r\n-1\r\n0/0",IDC_STATIC2,311,24,56,36,SS_SUNKEN
+    CTEXT           "\r\n-1\r\n0/0",IDC_STATIC3,367,24,56,36,SS_SUNKEN
+    CTEXT           "\r\n-1\r\n0/0",IDC_STATIC4,423,24,56,36,SS_SUNKEN
+    CTEXT           "\r\n-1\r\n0/0",IDC_STATIC5,255,60,56,36,SS_SUNKEN
+    CTEXT           "\r\n-1\r\n0/0",IDC_STATIC6,311,60,56,36,SS_SUNKEN
+    CTEXT           "\r\n-1\r\n0/0",IDC_STATIC7,367,60,56,36,SS_SUNKEN
+    CTEXT           "\r\n-1\r\n0/0",IDC_STATIC8,423,60,56,36,SS_SUNKEN
+    CTEXT           "\r\n-1\r\n0/0",IDC_STATIC9,255,96,56,36,SS_SUNKEN
+    CTEXT           "\r\n-1\r\n0/0",IDC_STATIC11,255,132,56,36,SS_SUNKEN
+    CTEXT           "\r\n-1\r\n0/0",IDC_STATIC12,423,132,56,36,SS_SUNKEN
+    CTEXT           "\r\n-1\r\n0/0",IDC_STATIC10,423,96,56,36,SS_SUNKEN
+    CTEXT           "",IDC_STATIC_center,311,96,112,72,SS_SUNKEN
+    CTEXT           "\r\n-1\r\n0/0",IDC_STATIC1,255,24,56,36,SS_SUNKEN
+    GROUPBOX        "配置",IDC_STATIC,250,183,233,110
+    CONTROL         "自定位置条件",IDC_CHECK_diyT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,262,198,65,11
+    COMBOBOX        IDC_COMBO_type,332,198,57,70,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_num,396,198,33,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER | NOT WS_VISIBLE
+    GROUPBOX        "",IDC_STATIC_box1,261,216,17,19
+    CONTROL         "",IDC_CHECKBOX_box1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,265,223,9,9
+    GROUPBOX        "",IDC_STATIC_box2,281,216,17,19
+    CONTROL         "",IDC_CHECKBOX_box2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,285,222,9,9
+    GROUPBOX        "",IDC_STATIC_box3,301,216,17,19
+    CONTROL         "",IDC_CHECKBOX_box3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,305,222,9,9
+    GROUPBOX        "",IDC_STATIC_box4,321,216,17,19
+    CONTROL         "",IDC_CHECKBOX_box4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,325,222,9,9
+    GROUPBOX        "",IDC_STATIC_box5,261,234,17,19
+    CONTROL         "",IDC_CHECKBOX_box5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,265,240,9,9
+    GROUPBOX        "",IDC_STATIC_box6,281,234,17,19
+    CONTROL         "",IDC_CHECKBOX_box6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,285,240,9,9
+    GROUPBOX        "",IDC_STATIC_box7,301,234,17,19
+    CONTROL         "",IDC_CHECKBOX_box7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,305,240,9,9
+    GROUPBOX        "",IDC_STATIC_box8,321,234,17,19
+    CONTROL         "",IDC_CHECKBOX_box8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,325,240,9,9
+    GROUPBOX        "",IDC_STATIC_box9,261,251,17,19
+    CONTROL         "",IDC_CHECKBOX_box9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,265,257,9,9
+    GROUPBOX        "",IDC_STATIC_box11,261,269,17,19
+    CONTROL         "",IDC_CHECKBOX_box11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,265,275,9,9
+    GROUPBOX        "",IDC_STATIC_box12,322,268,17,19
+    CONTROL         "",IDC_CHECKBOX_box12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,326,274,9,9
+    GROUPBOX        "",IDC_STATIC_box10,321,251,17,19
+    CONTROL         "",IDC_CHECKBOX_box10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,325,257,9,9
+    CONTROL         "抽到监视道具后停止",IDC_CHECK_goe,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,346,222,94,11
+    CONTROL         "非金框售罄X个后开抽",IDC_CHECK_notGs,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,346,237,91,11
+    CONTROL         "后两排小于X个开抽",IDC_CHECK_lastLow,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,346,252,82,11
+    EDITTEXT        IDC_EDIT_notGnum,442,235,31,13,ES_AUTOHSCROLL | ES_WANTRETURN
+    EDITTEXT        IDC_EDIT_lowNum,442,251,32,13,ES_AUTOHSCROLL | ES_WANTRETURN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_Exchange, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_BlockCatch, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_magicHat, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_Exchange AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_BlockCatch AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_magicHat AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// CN
+//
+
+IDR_CN1                 CN                      "json\\magicHat_cn.txt"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// KR
+//
+
+IDR_KR1                 KR                      "json\\magicHat_kr.txt"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TW
+//
+
+IDR_TW1                 TW                      "json\\magicHat_tw.txt"
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
