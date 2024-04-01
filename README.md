@@ -1,5 +1,5 @@
 # KartRider
-部分功能开源
+部分功能开源,仅为学习交流，禁止用于实际游戏
 
 ## 抓娃娃
 BlockCatchSystem
